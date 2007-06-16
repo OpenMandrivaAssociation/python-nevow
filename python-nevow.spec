@@ -15,7 +15,7 @@ BuildRequires: python-twisted-core
 BuildRequires: python-twisted-web
 # To fix up docs
 Buildrequires: dos2unix
-
+BuildArch:     noarch
 %description
 Nevow (pronounced as the French "nouveau", or "noo-voh") is a web application
 construction kit written in Python. It is designed to allow the programmer to
@@ -37,7 +37,7 @@ find examples \( -name '*.html' -o -name '*.xml' -o -name '*.css' \) \
 
 %install
 %{__rm} -rf %{buildroot}
-%{__python} setup.py install --skip-build --root %{buildroot} --install-purelib=%{py_platsitedir}
+%{__python} setup.py install --skip-build --root %{buildroot} --install-purelib=%{py_puresitedir}
 # Install man page
 %{__install} -D -p -m 0644 doc/man/nevow-xmlgettext.1 \
     %{buildroot}%{_mandir}/man1/nevow-xmlgettext.1
@@ -52,7 +52,7 @@ find examples \( -name '*.html' -o -name '*.xml' -o -name '*.css' \) \
 %doc ChangeLog LICENSE README doc/txt/* examples/
 %{_bindir}/nevow-xmlgettext
 %{_bindir}/nit
-%{py_platsitedir}/formless/
-%{py_platsitedir}/nevow/
+%{py_puresitedir}/formless/
+%{py_puresitedir}/nevow/
 %{_mandir}/man1/nevow-xmlgettext.1*
-%{py_platsitedir}/Nevow-0.9.18-py2.5.egg-info
+%{py_puresitedir}/Nevow-%{version}*.egg-info
