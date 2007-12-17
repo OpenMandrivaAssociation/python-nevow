@@ -8,7 +8,6 @@ URL: http://divmod.org/trac/wiki/DivmodNevow
 # Add ?format=raw to download...
 Source: http://divmod.org/trac/attachment/wiki/SoftwareReleases/Nevow-%{version}.tar.gz
 Patch:  Nevow-0.9.18-fix_js_installation.diff 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: python-twisted-core
 Requires: python-twisted-web
 BuildRequires: python-devel
