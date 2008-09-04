@@ -1,13 +1,12 @@
 Summary: Web application construction kit written in Python
 Name: python-nevow
-Version: 0.9.18
-Release: %mkrel 5
+Version: 0.9.31
+Release: %mkrel 1
 License: MIT
 Group: Development/Python
 URL: http://divmod.org/trac/wiki/DivmodNevow
 # Add ?format=raw to download...
 Source: http://divmod.org/trac/attachment/wiki/SoftwareReleases/Nevow-%{version}.tar.gz
-Patch:  Nevow-0.9.18-fix_js_installation.diff 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: python-twisted-core
 Requires: python-twisted-web
@@ -30,7 +29,6 @@ find examples \( -name '*.html' -o -name '*.xml' -o -name '*.css' \) \
     -exec dos2unix {} \;
 # Remove +x from executable doc files
 %{__chmod} -x examples/i18n/update-l10n examples/wsgi/test-cgi.py
-%patch -p0
 
 %build
 %{__python} setup.py build
@@ -57,3 +55,4 @@ find examples \( -name '*.html' -o -name '*.xml' -o -name '*.css' \) \
 %{py_puresitedir}/nevow/
 %{_mandir}/man1/nevow-xmlgettext.1*
 %{py_puresitedir}/Nevow-%{version}*.egg-info
+%{py_puresitedir}/twisted/plugins/
