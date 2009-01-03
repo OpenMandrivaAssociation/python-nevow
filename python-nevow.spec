@@ -1,6 +1,6 @@
 Summary: Web application construction kit written in Python
 Name: python-nevow
-Version: 0.9.31
+Version: 0.9.32
 Release: %mkrel 1
 License: MIT
 Group: Development/Python
