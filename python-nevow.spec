@@ -1,7 +1,7 @@
 Summary: Web application construction kit written in Python
 Name: python-nevow
 Version: 0.9.32
-Release: %mkrel 1
+Release: %mkrel 2
 License: MIT
 Group: Development/Python
 URL: http://divmod.org/trac/wiki/DivmodNevow
