@@ -56,3 +56,45 @@ find examples \( -name '*.html' -o -name '*.xml' -o -name '*.css' \) \
 %{_mandir}/man1/nevow-xmlgettext.1*
 %{py_puresitedir}/Nevow-%{version}*.egg-info
 %{py_puresitedir}/twisted/plugins/
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tv@mandriva.org> 0.9.32-2mdv2010.0
++ Revision: 442321
+- rebuild
+
+* Sat Jan 03 2009 Funda Wang <fwang@mandriva.org> 0.9.32-1mdv2009.1
++ Revision: 323812
+- new version 0.9.32
+
+* Thu Sep 04 2008 Jérôme Soyer <saispo@mandriva.org> 0.9.31-1mdv2009.0
++ Revision: 280481
+- New release
+
+* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 0.9.18-5mdv2009.0
++ Revision: 259737
+- rebuild
+
+* Fri Jul 25 2008 Thierry Vignaud <tv@mandriva.org> 0.9.18-4mdv2009.0
++ Revision: 247521
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.9.18-2mdv2008.1
++ Revision: 136452
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Jun 21 2007 Thierry Vignaud <tv@mandriva.org> 0.9.18-2mdv2008.0
++ Revision: 42303
+- fix group
+
+* Sat Jun 16 2007 Michael Scherer <misc@mandriva.org> 0.9.18-1mdv2008.0
++ Revision: 40430
+- fix installation of various js file
+- mark package as noarch and fix build on x86_64
+
+  + Jérôme Soyer <saispo@mandriva.org>
+    - Import python-nevow
+
