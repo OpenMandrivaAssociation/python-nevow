@@ -4,7 +4,7 @@ Version: 0.9.32
 Release: 3
 License: MIT
 Group: Development/Python
-URL: http://divmod.org/trac/wiki/DivmodNevow
+URL: https://divmod.org/trac/wiki/DivmodNevow
 # Add ?format=raw to download...
 Source: http://divmod.org/trac/attachment/wiki/SoftwareReleases/Nevow-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
